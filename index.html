@@ -4,19 +4,19 @@
     </head>
     <body>
         <h2>Convert jpg/jpeg to PDF</h2>
-        <form action="http://localhost:3000/api/v1/pdf/image_to_pdf" method="post" enctype="multipart/form-data" target="_blank">
+        <form action="https://pdfsync-api-test.herokuapp.com/api/v1/pdf/image_to_pdf" method="post" enctype="multipart/form-data" target="_blank">
             <input type="file" name="avatar" />
             <input type="submit" value="convert" />
         </form>
-        <form action="http://localhost:3000/api/v1/pdf/get_pdf" target="_blank">
+        <form action="https://pdfsync-api-test.herokuapp.com/api/v1/pdf/get_pdf" target="_blank">
             <input type="submit" value="download PDF" />
         </form>
         <h2>Convert PDF to jpg/jpeg</h2>
-        <form action="http://localhost:3000/api/v1/pdf/pdf_to_image" method="post" enctype="multipart/form-data" target="_blank">
+        <form action="https://pdfsync-api-test.herokuapp.com/api/v1/pdf/pdf_to_image" method="post" enctype="multipart/form-data" target="_blank">
             <input type="file" name="avatar" />
             <input type="submit" value="convert" />
         </form>
-        <form action="http://localhost:3000/api/v1/pdf/get_image" target="_blank">
+        <form action="https://pdfsync-api-test.herokuapp.com/api/v1/pdf/get_image" target="_blank">
             <input type="submit" value="download jpeg" />
         </form>
     </body>
