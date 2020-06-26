@@ -1,11 +1,23 @@
 <html>
+    <head>
+        <script type="text/javascript" src="constants.js"></script>
+    </head>
     <body>
+        <h2>Convert jpg/jpeg to PDF</h2>
         <form action="https://pdfsync-api-test.herokuapp.com/api/v1/pdf/image_to_pdf" method="post" enctype="multipart/form-data" target="_blank">
             <input type="file" name="avatar" />
             <input type="submit" value="convert" />
         </form>
         <form action="https://pdfsync-api-test.herokuapp.com/api/v1/pdf/get_pdf" target="_blank">
             <input type="submit" value="download jpg" />
+        </form>
+        <h2>Convert PDF to jpg/jpeg</h2>
+        <form action="https://pdfsync-api-test.herokuapp.com/api/v1/pdf/pdf_to_image" method="post" enctype="multipart/form-data" target="_blank">
+            <input type="file" name="avatar" />
+            <input type="submit" value="convert" />
+        </form>
+        <form action="https://pdfsync-api-test.herokuapp.com/api/v1/pdf/get_pdf" target="_blank">
+            <input type="submit" value="download pdf" />
         </form>
     </body>
 </html>

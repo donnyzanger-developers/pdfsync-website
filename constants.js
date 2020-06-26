@@ -1,0 +1,1 @@
+const PDF_API = 'https://pdfsync-api-test.herokuapp.com/api/v1/pdf';
