@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="constants.js"></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row text-center">
+                <!-- <div class="col-sm-12"> -->
+                    <a href="/">
+                        <img alt="PDF to JPG to PDF converter - pdf2jpg2pdf.com" src="assets/images/Logo.png" >
+                    </a>
+                <!-- </div> -->
+            </div>
+            <div class="row">
+                <p>
+                    Takes the free pdf2jpg service one step further and converts either way: from PDF to JPG or from JPG to PDF, all in one area for free, without having to go to multiple Websites. 
+                    Anyone can use the service for free, those working in a business, required to submit JPG as PDF to important consumers, and then for modifying the image, such as putting a logo in the JPG 
+                    by converting it back to JPG and then again to PDF. No monthly license fees to convert for you, it's all free. 
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Convert PDF to JPG</h2>
+                    <form action="http://34.66.213.133:3000/api/v1/pdf/pdf_to_image" method="post" enctype="multipart/form-data" target="_blank">
+                        <input type="file" name="avatar" />
+                        <input type="submit" value="convert" />
+                    </form>
+                    <form action="http://34.66.213.133:3000/api/v1/pdf/get_image" target="_blank">
+                        <input type="submit" value="download jpeg" />
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Convert JPG to PDF</h2>
+                    <form action="http://34.66.213.133:3000/api/v1/pdf/image_to_pdf" method="post" enctype="multipart/form-data" target="_blank">
+                        <input type="file" name="avatar" />
+                        <input type="submit" value="convert" />
+                    </form>
+                    <form action="http://34.66.213.133:3000/api/v1/pdf/get_pdf" target="_blank">
+                        <input type="submit" value="download PDF" />
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    We place great importance on the safe handling of your PDF and JPG. All uploaded PDF, converted JPG and PDF files are removed after a few hours.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
