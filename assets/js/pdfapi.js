@@ -15,7 +15,7 @@ $(document).ready(function () {
                 var url = window.URL || window.webkitURL;
                 var blobUrl = url.createObjectURL(blob);
                 a.href = blobUrl;
-                a.download = "te_1.jpg";
+                a.download = "pdf2jpg2pdf.jpg";
                 a.style.display = 'none';
                 document.body.appendChild(a);
                 a.click();
@@ -41,7 +41,7 @@ $(document).ready(function () {
                 var url = window.URL || window.webkitURL;
                 var blobUrl = url.createObjectURL(blob);
                 a.href = blobUrl;
-                a.download = "sample.pdf";
+                a.download = "pdf2jpg2pdf.pdf";
                 a.style.display = 'none';
                 document.body.appendChild(a);
                 a.click();
